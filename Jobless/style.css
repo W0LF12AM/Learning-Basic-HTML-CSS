@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins";
+  background-color: #F6FAFF;
 }
 
 a {
@@ -25,9 +26,6 @@ ul {
 }
 
 .navbar {
-  /* justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap; */
   margin-top: 40px;
   justify-content: space-between;
   display: flex;
@@ -49,6 +47,10 @@ ul {
   font-size: 16px;
   border: 1px solid rgba(10, 27, 89, 0.6);
   border-radius: 5px;
+}
+
+.sign-up-button:hover {
+  background-color: rgba(10, 27, 89, 0.1);
 }
 
 .hero-and-desc {
@@ -80,15 +82,23 @@ ul {
 }
 
 .featured-jobs {
-    margin-top: 150px;
+  margin-top: 80px;
   font-size: 16px;
   font-weight: 600;
   padding-left: 0;
 }
 
+.card-jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 .card-job {
-  background-color: #0026ff;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 20px;
   border-radius: 12px;
   max-width: 360px;
@@ -98,6 +108,18 @@ ul {
   gap: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+.card-job:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  background-color: #0026ff;
+  color: white;
+}
+
+.card-job:hover .language-badge {
+  background-color: #4b4bff;
+}
+
 
 .job-header {
   margin-top: 10px;
@@ -122,7 +144,7 @@ ul {
 .company {
   font-size: 14px;
   margin: 4px 0 0 0;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
 }
 
 .card-job-footer {
@@ -131,7 +153,7 @@ ul {
   align-items: center;
 
   padding: 20px 0 25px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #e0e0e0;
 }
 
 .card-job-desc {
@@ -142,8 +164,9 @@ ul {
 }
 
 .language-badge {
-  background-color: #4b4bff;
+  background-color: #e0e0e0;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 12px;
+  display: inline-block;
 }
