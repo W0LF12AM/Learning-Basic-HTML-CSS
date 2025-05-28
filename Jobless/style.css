@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins";
-  background-color: #F6FAFF;
+  background-color: #f6faff;
 }
 
 a {
@@ -98,6 +98,7 @@ ul {
 
 .card-job {
   background-color: white;
+  position: relative;
   color: black;
   padding: 20px;
   border-radius: 12px;
@@ -119,7 +120,6 @@ ul {
 .card-job:hover .language-badge {
   background-color: #4b4bff;
 }
-
 
 .job-header {
   margin-top: 10px;
@@ -169,4 +169,17 @@ ul {
   border-radius: 999px;
   font-size: 12px;
   display: inline-block;
+}
+
+.bookmark-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-job:hover .bookmark-btn {
+  color: white; 
 }
